@@ -1,0 +1,6 @@
+/* src/App.css */
+.app-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f4f4f9;
+}
