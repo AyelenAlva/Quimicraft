@@ -3,6 +3,8 @@ import { Outlet, Navigate } from "react-router-dom";
 
 const PrivateRoutes = () => {
   const userData = JSON.parse(localStorage.getItem("userData"));
+
+  console.log(userData)
   const isAuthenticated = userData?.isLogged;
 
   console.log("Acceso a rutas privadas. Autenticado:", isAuthenticated);

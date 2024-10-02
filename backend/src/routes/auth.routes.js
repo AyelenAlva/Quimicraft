@@ -1,4 +1,4 @@
-import { register, login, getTiposUsuario } from '../controllers/auth.controller.js';
+import { register, login, getTiposUsuario} from '../controllers/auth.controller.js';
 
 //requerimos el metodo router de express.
 import { Router } from 'express';
@@ -11,6 +11,8 @@ userRouter.post('/register', register);
 
 // Lo mismo que el registro pero con el login.
 userRouter.post('/login', login);
+
+
 
 userRouter.get('/tipos-usuario', getTiposUsuario);
 

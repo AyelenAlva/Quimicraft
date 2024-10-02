@@ -15,10 +15,13 @@ const PublicRoutes = () => {
     switch (userData.role) {
       case "student":
         return <Navigate to="/estudiantes" />;
+        
       case "teacher":
         return <Navigate to="/profesores" />;
       case "admin":
         return <Navigate to="/admin" />;
+        case "student":
+          return <Navigate to="/projects" />;
       default:
         return <Navigate to="/" />;
     }

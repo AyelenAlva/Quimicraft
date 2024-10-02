@@ -1,0 +1,14 @@
+.banner {
+  background-color: #4ebcf7;
+  height: 200px;
+  background-image: url('/images/banner-background.png'); /* Ajusta la ruta a una imagen de fondo si tienes */
+  background-size: cover;
+  background-position: center;
+}
+h1 {
+  color: white;
+  font-size: 2rem;
+}
+.text-primary {
+  color: #f4c001;
+}

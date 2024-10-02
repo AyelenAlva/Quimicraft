@@ -2,6 +2,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "../views/login/Login";
 import Register from "../views/register/Register";
+import Projects from "../views/estudiantes/projects"
 import PrivateRoutes from "./PrivateRoutes";
 import PublicRoutes from "./PublicRoutes";
 import Estudiantes from "../views/estudiantes/Estudiantes"; 
@@ -13,18 +14,15 @@ const AppRouter = () => {
     <BrowserRouter>
       <Routes>
         {/* Rutas públicas accesibles solo si no está autenticado */}
-        <Route element={<PublicRoutes />}>
-          <Route path="/" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-        </Route>
+        <Route path="/" element={<Login />} />
+        <Route path="/register" element={<Register />} />
 
         {/* Rutas privadas accesibles solo si está autenticado */}
         <Route element={<PrivateRoutes />}>
           <Route path="/estudiantes" element={<Estudiantes />} />
           <Route path="/profesores" element={<Profesores />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/admin" element={<Admin />} />
-      
-      
         </Route>
       </Routes>
     </BrowserRouter>

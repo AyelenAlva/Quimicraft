@@ -137,7 +137,7 @@ const Register = () => {
             name="id_rela_tipo_usuario"
             onChange={handleChange}
           >
-           
+          
             {tiposUsuario.map((tipo) => (
               <option key={tipo.idTipoUsuario} value={tipo.idTipoUsuario}>
                 {tipo.descripcion}

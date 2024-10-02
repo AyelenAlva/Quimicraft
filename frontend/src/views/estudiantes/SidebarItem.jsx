@@ -1,7 +1,7 @@
 // src/components/SidebarItem.jsx
 import "./SidebarItem.css"; // Estilos específicos para cada ítem
 
-function SidebarItem({ icon, text, active, to }) {
+function SidebarItem({ icon, text, active }) {
   return (
     <li className={`sidebar-item ${active ? "active" : ""}`}>
       <span className="icon">{icon}</span>
