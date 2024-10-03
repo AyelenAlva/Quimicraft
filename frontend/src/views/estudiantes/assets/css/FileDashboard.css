@@ -46,3 +46,27 @@
 .user-icon {
   margin-left: 5px;
 }
+/* Estilo para los enlaces en quick access y archivos */
+.quick-access-link, .file-link {
+  color: rgb(0, 0, 0);            /* Letras blancas */
+  text-decoration: none;    /* Quita el subrayado */
+}
+
+.quick-access-link:hover, .file-link:hover {
+  text-decoration: underline;  /* Opción: si quieres subrayado al pasar el mouse */
+}
+
+/* Otros estilos adicionales si necesitas personalizar más */
+.quick-access-item, .files-table td {
+  padding: 10px;            /* Espaciado alrededor del contenido */
+}
+
+.file-name {
+  display: flex;
+  align-items: center;
+}
+
+.file-name span {
+  margin-left: 8px;         /* Separación entre el ícono y el texto */
+}
+

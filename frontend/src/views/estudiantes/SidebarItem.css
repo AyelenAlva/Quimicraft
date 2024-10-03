@@ -5,6 +5,7 @@
   padding: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+
 }
 
 .sidebar-item:hover {
@@ -17,12 +18,11 @@
 
 .sidebar-item .icon {
   margin-right: 10px;
+
 }
 
 .sidebar-item .text {
   font-size: 16px;
-}
-.Home {
-  color: white;
-  text-decoration: none;
+  color: #ffffff;
+
 }

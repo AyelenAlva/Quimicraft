@@ -8,7 +8,7 @@ const connectDB = async () => {
       host: "localhost",
       user: "root",
       password: "",
-      database: "quimicrafT",
+      database: "quimicraf",
     });
   } catch (error) {
     console.log(error);
